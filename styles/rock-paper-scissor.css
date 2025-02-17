@@ -1,0 +1,167 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffff00;
+  background-color: #ffff00;
+}
+
+.all-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/images/back.png');
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.button-contain-css {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.button-contain-css button {
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.button-contain-css button:hover {
+  cursor: pointer;
+  border-color: #ffff00;
+}
+
+.button-contain-css button img{
+  width: 100px;
+  height: 100px;
+}
+
+.js-paper, .js-scissor{
+  margin-left: 15px;
+}
+
+.move-icon, .move-icon1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 30px;
+}
+
+.move-icon1 {
+  margin-left: 25px;
+}
+
+.move-icon:hover, .move-icon1:hover {
+  border-color: yellow;
+}
+
+.result-dec {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.score-dec {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 0;
+}
+
+.last-dec {
+  margin-bottom: 30px;
+}
+
+.js-leave, .js-auto{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.js-auto {
+  margin-left: 15px;
+}
+
+.js-leave:hover, .js-auto:hover{
+  cursor: pointer;
+  border-color: yellow;
+}
+
+.js-leave img, .js-auto img{
+  width: 115px;
+  height: 120px;
+}
+
+footer {
+  color: black;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.moves {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  footer {
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .button-contain-css button img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .move-icon, .move-icon1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .moves {
+    position: initial;
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 800px) {
+
+  .moves {
+    position: initial;
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+}
